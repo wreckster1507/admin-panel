@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 
@@ -16,12 +15,11 @@ import DeleteParticipant from "./components/DeleteParticipant";
 
 
 function App() {
-  const [login, setLogin] = useState(false)
   return (
     <>
       <BrowserRouter>
         <div>
-          <Navbar login={login} setLogin={setLogin} />
+          <Navbar />
 
           <Routes>
             <Route path="/" element={<Home />} />

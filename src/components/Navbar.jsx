@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Navbar({ login, setLogin }) {
+export default function Navbar() {
     const [state, setState] = useState(false)
 
 
@@ -40,11 +40,7 @@ export default function Navbar({ login, setLogin }) {
                     </ul>
                 </div>
 
-                <div>
-                    <button className="bg-indigo-600 text-white px-4 py-2 rounded-md"
-                        onClick={() => setLogin(!login)}
-                    >Login</button>
-                </div>
+
 
             </div>
         </nav>
