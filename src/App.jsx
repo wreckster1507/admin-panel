@@ -12,6 +12,7 @@ import EditEvent from "./components/EditEvent";
 import DeleteEvent from "./components/DeleteEvent";
 import DeleteClub from "./components/DeleteClub";
 import DeleteParticipant from "./components/DeleteParticipant";
+import Login from "./components/Login";
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
             <Route path="/events" element={<Events />} />
             <Route path="/participants" element={<Participants />} />
             <Route path="/create-event" element={<EventCreate />} />
+            <Route path="/login" element={<Login />} />
+
 
 
             <Route path="/clubs" element={<Club />} />
