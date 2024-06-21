@@ -22,7 +22,7 @@ const CreateClub = () => {
             coLeadMember
         };
         axios
-            .post('https://project-club-fuisson.onrender.com/clubs', data)
+            .post('https://club-fusion-server.onrender.com/clubs', data)
             .then(() => {
                 navigate('/clubs');
             })

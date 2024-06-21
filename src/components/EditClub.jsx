@@ -34,7 +34,7 @@ const EditClub = () => {
             coLeadMember
         };
         axios
-            .patch(`https://project-club-fuisson.onrender.com/clubs/${id}`, data)
+            .patch(`https://club-fusion-server.onrender.com/clubs/${id}`, data)
             .then(() => {
                 navigate('/clubs');
             })

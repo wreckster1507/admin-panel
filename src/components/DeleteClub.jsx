@@ -8,7 +8,7 @@ const DeleteClub = () => {
 
     const handleDeleteClub = () => {
         axios
-            .delete(`https://project-club-fuisson.onrender.com/clubs/${id}`)
+            .delete(`https://club-fusion-server.onrender.com/clubs/${id}`)
             .then(() => {
                 navigate('/clubs');
             })

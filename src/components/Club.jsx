@@ -5,7 +5,7 @@ function Club() {
     const [tableItems, setTableItems] = useState([]);
 
     useEffect(() => {
-        fetch('https://project-club-fuisson.onrender.com/clubs')
+        fetch('https://club-fusion-server.onrender.com/clubs')
             .then(response => response.json())
             .then(data => {
                 setTableItems(data);

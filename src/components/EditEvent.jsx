@@ -17,7 +17,7 @@ const EditEvent = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        axios.get(`https://project-club-fuisson.onrender.com/events/${id}`)
+        axios.get(`https://club-fusion-server.onrender.com/events/${id}`)
             .then((response) => {
                 console.log(response.data);
                 setEventName(response.data.eventName);

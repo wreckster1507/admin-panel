@@ -31,7 +31,7 @@ const EventCreate = () => {
             price
         };
         axios
-            .post('https://project-club-fuisson.onrender.com/events', data)
+            .post('https://club-fusion-server.onrender.com/events', data)
             .then(() => {
                 navigate('/events');
             })

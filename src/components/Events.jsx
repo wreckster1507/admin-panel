@@ -5,7 +5,7 @@ function Events() {
     const [tableItems, setTableItems] = useState([]);
 
     useEffect(() => {
-        fetch('https://project-club-fuisson.onrender.com/events')
+        fetch('https://club-fusion-server.onrender.com/events')
             .then(response => response.json())
             .then(data => {
                 setTableItems(data);
