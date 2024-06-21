@@ -48,7 +48,7 @@ const EditEvent = () => {
             price
         };
         axios
-            .put(`https://project-club-fuisson.onrender.com/events${id}`, data)
+            .put(`https://club-fusion-server.onrender.com/events${id}`, data)
             .then(() => {
                 navigate('/events');
             })
