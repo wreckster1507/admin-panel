@@ -12,7 +12,7 @@ const EditClub = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        axios.get(`https://project-club-fuisson.onrender.com/clubs/${id}`)
+        axios.get(`https://club-fusion-server.onrender.com/clubs/${id}`)
             .then((response) => {
                 console.log(response.data);
                 setTitle(response.data.title);
